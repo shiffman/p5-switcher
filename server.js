@@ -28,7 +28,7 @@ io.on('connection', (socket) => {
   console.log('A client connected');
   
   // Tell new clients the current sketch
-  socket.emit('change-sketch', sketches[currentSketchIndex]);
+  socket.emit('change-sketch', config.sketches[currentSketchIndex]);
   
   socket.on('disconnect', () => {
     console.log('A client disconnected');
@@ -46,6 +46,6 @@ server.listen(port, () => {
     console.log(`Switched to ${currentSketch.name} (${currentSketch.path})`);
     
     // Broadcast the change to all connected clients
-    io.emit('change-sketch', currentSketch.path);
+    io.emit('change-sketch', currentSketch);
   }, config.switchInterval || 5000);
 });

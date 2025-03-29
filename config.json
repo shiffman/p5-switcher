@@ -4,15 +4,18 @@
   "sketches": [
     {
       "path": "sketches/sketch1",
-      "name": "Rotating Square"
+      "name": "First Last",
+      "title": "Rotating Square"
     },
     {
       "path": "sketches/sketch2",
-      "name": "Bouncing Circles"
+      "name": "First Last",
+      "title": "Bouncing Circles"
     },
     {
       "path": "sketches/sketch3",
-      "name": "Color Grid"
+      "name": "First Last",
+      "title": "Color Grid"
     }
   ]
 }

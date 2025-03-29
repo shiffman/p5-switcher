@@ -16,7 +16,7 @@ A Node.js server that automatically rotates between multiple p5.js sketches usin
    npm start
    ```
 
-3. Open your browser to http://localhost:3333
+3. Open your browser to <http://localhost:3333>
 
 ## Project Structure
 
@@ -73,3 +73,35 @@ The `config.json` file controls the server settings and sketch rotation:
 
 1. Create a new directory in `public/sketches/` with your sketch files
 2. Add the sketch information to the `sketches` array in `config.json`
+
+## Autorun Setup
+
+1. Edit the content of `com.p5switcher.plist` to point to this folder on your system.
+1. Copy the LaunchAgent file to your system
+
+```bash
+# Copy the plist file to your LaunchAgents directory
+cp ./autorun-setup/com.p5switcher.plist ~/Library/LaunchAgents/
+```
+
+3. Load the LaunchAgent
+
+```bash
+launchctl load ~/Library/LaunchAgents/com.p5switcher.plist
+```
+
+4. Verify it's working
+
+```bash
+# Check if it's loaded
+launchctl list | grep com.p5switcher
+
+# Manually start it to test
+launchctl start com.p5switcher
+```
+
+5. To stop the service and autorun, you can unload the LaunchAgent:
+
+```bash
+launchctl unload ~/Library/LaunchAgents/com.p5switcher.plist
+```

@@ -55,7 +55,8 @@ The `config.json` file controls the server settings and sketch rotation:
   "sketches": [
     {
       "path": "sketches/sketch1",
-      "name": "Rotating Square"
+      "name": "First Last",
+      "title": "Rotating Square"
     }
   ]
 }
@@ -65,7 +66,8 @@ The `config.json` file controls the server settings and sketch rotation:
 - `switchInterval`: Time in milliseconds between sketch rotations
 - `sketches`: Array of sketch objects, each with:
   - `path`: Path to the sketch folder, relative to the public directory
-  - `name`: Display name for the sketch (used in server logs)
+  - `name`: Creator's name (e.g., "First Last")
+  - `title`: Title of the sketch (e.g., "Bouncing Circles")
 
 ## Adding New Sketches
 

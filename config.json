@@ -1,0 +1,18 @@
+{
+  "port": 3333,
+  "switchInterval": 5000,
+  "sketches": [
+    {
+      "path": "sketches/sketch1",
+      "name": "Rotating Square"
+    },
+    {
+      "path": "sketches/sketch2",
+      "name": "Bouncing Circles"
+    },
+    {
+      "path": "sketches/sketch3",
+      "name": "Color Grid"
+    }
+  ]
+}

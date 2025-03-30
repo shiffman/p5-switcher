@@ -61,6 +61,16 @@
         document.getElementById('sketch-title').textContent = sketch.title;
         document.getElementById('creator-name').textContent = sketch.name;
       });
+
+      window.addEventListener('resize', () => {
+        // Refresh the iframe content
+        if (frame.src) {
+          frame.contentWindow.location.reload();
+        }
+        frame.style.width = `${window.innerWidth}px`;
+        frame.style.height = `${window.innerHeight}px`;
+        console.log('Frame resized to:', frame.style.width, frame.style.height);
+      });
     </script>
   </body>
 </html>

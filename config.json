@@ -1,6 +1,10 @@
 {
   "port": 3333,
   "switchInterval": 60000,
+  "overlay": {
+    "titleFontSize": 16,
+    "creatorFontSize": 14
+  },
   "sketches": [
     {
       "path": "sketches/Asteroids-and-Boids-3-main",

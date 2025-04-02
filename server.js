@@ -27,6 +27,9 @@ let currentSketchIndex = 0;
 io.on('connection', (socket) => {
   console.log('A client connected');
   
+  // Send overlay settings to the client
+  socket.emit('overlay-config', config.overlay || { titleFontSize: 16, creatorFontSize: 14 });
+  
   // Tell new clients the current sketch
   socket.emit('change-sketch', config.sketches[currentSketchIndex]);
   

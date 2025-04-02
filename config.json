@@ -3,19 +3,44 @@
   "switchInterval": 5000,
   "sketches": [
     {
-      "path": "sketches/sketch1",
-      "name": "First Last",
-      "title": "Rotating Square"
+      "path": "sketches/Asteroids-and-Boids-3-main",
+      "name": "DJ Kim",
+      "title": "Asteroids & Boids 3.0"
     },
     {
-      "path": "sketches/sketch2",
-      "name": "First Last",
-      "title": "Bouncing Circles"
+      "path": "sketches/nature-of-code-exhibition-submission-3d-pipes",
+      "name": "Jack B. Du",
+      "title": "Pipes"
     },
     {
-      "path": "sketches/sketch3",
-      "name": "First Last",
-      "title": "Color Grid"
+      "path": "sketches/NoC_CD_Submit",
+      "name": "Seun Elemo",
+      "title": "Marble Particle Spiral"
+    },
+    {
+      "path": "https://symbols.bairui.dev/",
+      "name": "Bairui Su",
+      "title": "Jiggly Symbols"
+    },
+    {
+      "path": "sketches/Quark_Qaleen",
+      "name": "Sai Ram Ved Vijapurapu",
+      "title": "Quark Qaleen"
+    },
+    {
+      "path": "sketches/Polar_Radiance",
+      "name": "Charles Zhang",
+      "title": "Polar_Radiance"
+    },
+    {
+      "path": "sketches/Three_Body_Simulator",
+      "name": "Cheewon Choi",
+      "title": "Three Body Simulator"
+    },
+    {
+      "path": "sketches/sin_and_cos_musicwave",
+      "name": "Luna Chen",
+      "title": "FlowInSin"
     }
   ]
 }

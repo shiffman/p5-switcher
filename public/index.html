@@ -52,6 +52,13 @@
       const socket = io();
       const frame = document.getElementById('sketch-frame');
 
+      // Listen for overlay configuration
+      socket.on('overlay-config', (config) => {
+        console.log('Received overlay config:', config);
+        document.getElementById('sketch-title').style.fontSize = `${config.titleFontSize}px`;
+        document.getElementById('creator-name').style.fontSize = `${config.creatorFontSize}px`;
+      });
+
       // Listen for sketch change events
       socket.on('change-sketch', (sketch) => {
         console.log(`Changing to ${sketch.path}`);

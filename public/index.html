@@ -55,7 +55,13 @@
       // Listen for sketch change events
       socket.on('change-sketch', (sketch) => {
         console.log(`Changing to ${sketch.path}`);
-        frame.src = `/${sketch.path}`;
+        
+        // Check if the path is a URL (starts with http:// or https://)
+        if (sketch.path.startsWith('http://') || sketch.path.startsWith('https://')) {
+          frame.src = sketch.path;
+        } else {
+          frame.src = `/${sketch.path}`;
+        }
         
         // Update overlay with sketch info
         document.getElementById('sketch-title').textContent = sketch.title;

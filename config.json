@@ -1,6 +1,6 @@
 {
   "port": 3333,
-  "switchInterval": 5000,
+  "switchInterval": 60000,
   "sketches": [
     {
       "path": "sketches/Asteroids-and-Boids-3-main",

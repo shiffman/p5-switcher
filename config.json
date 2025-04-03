@@ -7,6 +7,16 @@
   },
   "sketches": [
     {
+      "path": "sketches/NOC_Simulation_Project_Cici",
+      "name": "Cici Chen",
+      "title": "Dynamic Ocean Simulation"
+    },
+    {
+      "path": "sketches/NOC_RW_2",
+      "name": "Face Walker",
+      "title": "Ege Tezcan"
+    },
+    {
       "path": "sketches/Asteroids-and-Boids-3-main",
       "name": "DJ Kim",
       "title": "Asteroids & Boids 3.0"
@@ -55,11 +65,6 @@
       "path": "sketches/3D_Game_of_Life",
       "name": "Alan Ren",
       "title": "3D Game of Life"
-    },
-    {
-      "path": "sketches/NOC_Simulation_Project_Cici",
-      "name": "Cici Chen",
-      "title": "Dynamic Ocean Simulation"
     },
     {
       "path": "sketches/NOC_Simulation_Project_Cici",

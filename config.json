@@ -45,6 +45,16 @@
       "path": "sketches/Drop_the_Leaf",
       "name": "Luna Chen",
       "title": "DropTheLeaf"
+    },
+    {
+      "path": "sketches/NOC-Solar",
+      "name": "Jessie Zhai",
+      "title": "Solar Slider"
+    },
+    {
+      "path": "sketches/3D_Game_of_Life",
+      "name": "Alan Ren",
+      "title": "3D Game of Life"
     }
   ]
 }

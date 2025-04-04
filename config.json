@@ -12,12 +12,7 @@
       "title": "Dynamic Ocean Simulation"
     },
     {
-      "path": "sketches/NOC_RW_2",
-      "name": "Face Walker",
-      "title": "Ege Tezcan"
-    },
-    {
-      "path": "sketches/Asteroids-and-Boids-3-main",
+      "path": "https://dk5001.github.io/Asteroids-and-Boids-3/",
       "name": "DJ Kim",
       "title": "Asteroids & Boids 3.0"
     },
@@ -67,9 +62,19 @@
       "title": "3D Game of Life"
     },
     {
-      "path": "sketches/NOC_Simulation_Project_Cici",
-      "name": "Cici Chen",
-      "title": "Dynamic Ocean Simulation"
+      "path": "sketches/Chladni_Morphed",
+      "name": "Ege Tezcan",
+      "title": "Chladni Patterns"
+    },
+    {
+      "path": "sketches/zen_3",
+      "name": "Jingyi Chen",
+      "title": "Zen"
+    },
+    {
+      "path": "sketches/Mondrian_met_Balatro/",
+      "name": "Jinyuan Xu",
+      "title": "Mondrian met Balatro"
     }
   ]
 }

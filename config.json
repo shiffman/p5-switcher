@@ -7,6 +7,11 @@
   },
   "sketches": [
     {
+      "path": "sketches/NOC_Simulation_Project_Cici",
+      "name": "Cici Chen",
+      "title": "Dynamic Ocean Simulation"
+    },
+    {
       "path": "https://dk5001.github.io/Asteroids-and-Boids-3/",
       "name": "DJ Kim",
       "title": "Asteroids & Boids 3.0"
@@ -55,16 +60,6 @@
       "path": "sketches/3D_Game_of_Life",
       "name": "Alan Ren",
       "title": "3D Game of Life"
-    },
-    {
-      "path": "sketches/NOC_Simulation_Project_Cici",
-      "name": "Cici Chen",
-      "title": "Dynamic Ocean Simulation"
-    },
-    {
-      "path": "sketches/NOC_Simulation_Project_Cici",
-      "name": "Cici Chen",
-      "title": "Dynamic Ocean Simulation"
     }
   ]
 }

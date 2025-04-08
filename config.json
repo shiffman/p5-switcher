@@ -60,6 +60,21 @@
       "path": "sketches/3D_Game_of_Life",
       "name": "Alan Ren",
       "title": "3D Game of Life"
+    },
+    {
+      "path": "sketches/Chladni_Morphed",
+      "name": "Ege Tezcan",
+      "title": "Chladni's Dance"
+    },
+    {
+      "path": "sketches/zen_3",
+      "name": "Jingyi Chen",
+      "title": "Zen"
+    },
+    {
+      "path": "sketches/Mondrian_met_Balatro/",
+      "name": "Jinyuan Xu",
+      "title": "Mondrian met Balatro"
     }
   ]
 }

@@ -1,7 +1,7 @@
 class Boid {
   constructor(x, y, ratio) {
     this.position = createVector(x, y);
-    this.ratio = ratio
+    this.ratio = ratio;
     this.velocity = createVector(random(-2 * ratio, 2 * ratio), random(-2 * ratio, 2 * ratio));
     this.acceleration = createVector(0, 0);
     this.maxSpeed = 3 * ratio;
@@ -22,8 +22,8 @@ class Boid {
     this.acceleration.add(sep);
     this.acceleration.add(ali);
     this.acceleration.add(coh);
-    
-    this.centerConnect()
+
+    this.centerConnect();
   }
 
   separate(boids) {
@@ -31,12 +31,7 @@ class Boid {
     let count = 0;
 
     for (let other of boids) {
-      let d = dist(
-        this.position.x,
-        this.position.y,
-        other.position.x,
-        other.position.y
-      );
+      let d = dist(this.position.x, this.position.y, other.position.x, other.position.y);
       if (other != this && d > 0 && d < this.desiredSeparation) {
         let diff = p5.Vector.sub(this.position, other.position);
         diff.normalize();
@@ -65,12 +60,7 @@ class Boid {
     let count = 0;
 
     for (let other of boids) {
-      let d = dist(
-        this.position.x,
-        this.position.y,
-        other.position.x,
-        other.position.y
-      );
+      let d = dist(this.position.x, this.position.y, other.position.x, other.position.y);
       if (other != this && d > 0 && d < this.neighborDist) {
         sum.add(other.velocity);
         count++;
@@ -94,12 +84,7 @@ class Boid {
     let count = 0;
 
     for (let other of boids) {
-      let d = dist(
-        this.position.x,
-        this.position.y,
-        other.position.x,
-        other.position.y
-      );
+      let d = dist(this.position.x, this.position.y, other.position.x, other.position.y);
       if (other != this && d > 0 && d < this.neighborDist) {
         sum.add(other.position);
         count++;

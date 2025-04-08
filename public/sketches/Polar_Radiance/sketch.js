@@ -2,25 +2,22 @@ let boids = [];
 let isDrawing = false;
 
 function setup() {
-  let canvas = createCanvas(
-    Math.min(windowWidth, windowHeight),
-    Math.min(windowWidth, windowHeight)
-  );
+  let canvas = createCanvas(windowWidth, windowHeight);
 
   reset();
 }
 
 function draw() {
+  background(0, 4);
   for (let boid of boids) {
     boid.flock(boids);
     boid.update();
-
     moveOver(boid);
   }
 
-  if (frameCount % 200 == 0) {
-    reset();
-  }
+  // if (frameCount % 200 == 0) {
+  //   reset();
+  // }
 }
 
 function moveOver(b) {
@@ -32,23 +29,21 @@ function moveOver(b) {
 
 function reset() {
   isDrawing = true;
-  for (let i = 0; i < 100; i++) {
-    boids.push(
-      new Boid(random(width), random(height), Math.min(width / 800, 1))
-    );
+  for (let i = 0; i < 200; i++) {
+    boids.push(new Boid(random(width), random(height), Math.min(width / 800, 1)));
   }
 
-  setTimeout(() => {
-    boids = [];
-    isDrawing = false;
-  }, 2500);
+  // setTimeout(() => {
+  //   boids = [];
+  //   isDrawing = false;
+  // }, 2500);
 
   background(15);
 }
 
 function keyPressed() {
   if (keyCode == 83) {
-    saveCanvas("polar_radiance.png");
+    saveCanvas('polar_radiance.png');
   } else if (keyCode == 32 && !isDrawing) {
     reset();
   }

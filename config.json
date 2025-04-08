@@ -7,6 +7,16 @@
   },
   "sketches": [
     {
+      "path": "sketches/Lightning",
+      "name": "Amy Liu",
+      "title": "Lightning Bolt"
+    },
+    {
+      "path": "sketches/Many_Minds_One_Motion",
+      "name": "Kiki Ye",
+      "title": "Many Minds, One Motion"
+    },
+    {
       "path": "sketches/NOC_Simulation_Project_Cici",
       "name": "Cici Chen",
       "title": "Dynamic Ocean Simulation"
@@ -47,9 +57,9 @@
       "title": "Three Body Simulator"
     },
     {
-      "path": "sketches/Drop_the_Leaf",
+      "path": "sketches/sin_and_cos_musicwave",
       "name": "Luna Chen",
-      "title": "DropTheLeaf"
+      "title": "FlowInSin"
     },
     {
       "path": "sketches/NOC-Solar",

@@ -12,23 +12,23 @@ let strokeW;
 function preload() {
   //font = loadFont("/assets/Inter_18pt-Black.ttf");
   //font = loadFont("/assets/SpaceMono-Bold.ttf");
-  font = loadFont("/assets/bashful.ttf");
+  font = loadFont('assets/bashful.ttf');
 }
 
 function setup() {
   createCanvas(1080, 1920);
-  fontSize = windowWidth/2.2;
-  strokeW = windowWidth/150;
+  fontSize = windowWidth / 2.2;
+  strokeW = windowWidth / 150;
 
   newPaths(); // Generate multiple paths
-  
+
   let totalLength = paths.reduce((sum, p) => sum + p.getLength(), 0);
   let totalVehicles = 80;
   for (let path of paths) {
     let portion = path.getLength() / totalLength;
     let count = floor(portion * totalVehicles);
     for (let i = 0; i < count; i++) {
-      newVehicle(random(-buffer, width+buffer), random(-buffer, height+buffer), path);
+      newVehicle(random(-buffer, width + buffer), random(-buffer, height + buffer), path);
     }
   }
   pathCol = random(255);
@@ -48,11 +48,11 @@ function draw() {
 }
 
 function keyPressed() {
-  if (key == "d") debug = !debug;
+  if (key == 'd') debug = !debug;
 }
 
 function newPaths() {
-  let lines = "RO\nAD".split("\n");
+  let lines = 'RO\nAD'.split('\n');
   let leading = fontSize * 0.9;
   let letterSpacing = fontSize * 0.2; // You can adjust this!
 
@@ -64,17 +64,17 @@ function newPaths() {
 
 function collectTextPoints(lines, leading, letterSpacing) {
   let allPoints = [];
-  
+
   for (let i = 0; i < lines.length; i++) {
     let xCursor = 0;
     for (let char of lines[i]) {
-      if (char === " ") {
+      if (char === ' ') {
         xCursor += fontSize * 0.3; // Skip space
         continue;
       }
 
       let charPoints = font.textToPoints(char, xCursor, i * leading, fontSize, {
-        sampleFactor: 0.2
+        sampleFactor: 0.2,
       });
 
       allPoints = allPoints.concat(charPoints);
@@ -89,7 +89,10 @@ function collectTextPoints(lines, leading, letterSpacing) {
 }
 
 function getCenteringOffsets(points) {
-  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  let minX = Infinity,
+    minY = Infinity,
+    maxX = -Infinity,
+    maxY = -Infinity;
 
   for (let p of points) {
     minX = min(minX, p.x);
@@ -179,16 +182,20 @@ function randomEdgePosition(buffer) {
   let side = floor(random(4)); // 0 = top, 1 = right, 2 = bottom, 3 = left
   let x, y;
 
-  if (side === 0) { // top
+  if (side === 0) {
+    // top
     x = random(-buffer, width + buffer);
     y = -buffer;
-  } else if (side === 1) { // right
+  } else if (side === 1) {
+    // right
     x = width + buffer;
     y = random(-buffer, height + buffer);
-  } else if (side === 2) { // bottom
+  } else if (side === 2) {
+    // bottom
     x = random(-buffer, width + buffer);
     y = height + buffer;
-  } else { // left
+  } else {
+    // left
     x = -buffer;
     y = random(-buffer, height + buffer);
   }

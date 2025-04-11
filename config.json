@@ -7,6 +7,11 @@
   },
   "sketches": [
     {
+      "path": "sketches/Path_Cursor_v2",
+      "name": "Shun Huang",
+      "title": "Road"
+    },
+    {
       "path": "sketches/Lightning",
       "name": "Amy Liu",
       "title": "Lightning Bolt"
